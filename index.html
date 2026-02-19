@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Care Plus | Hospital Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Life Care Plus</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#diseases">Diseases</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+    <!-- Main Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Life Care Plus</h2>
+        <p>Online consultation & appointment booking from home</p>
+     <a href="#appointment" class="book-btn">Book Appointment</a>
+
+        <!--button>Book Appointment</button-->
+    </section>
+    <!-- About Hospital Section -->
+<section id="about" class="about">
+    <h2>About Life Care Plus</h2>
+    <p>
+        Life Care Plus was established in 2010 with a mission to provide quality healthcare.
+        We have modern facilities including ICU, OPD, Laboratory, and Emergency Care.
+    </p>
+</section>
+
+<!-- Diseases & Treatments Section -->
+<section id="diseases" class="diseases">
+    <h2>Our Treatments</h2>
+    <div class="disease-list">
+        <div class="disease-item">
+            <h3>Fever & Cold</h3>
+            <p>Quick online consultation for minor illnesses.</p>
+        </div>
+        <div class="disease-item">
+            <h3>Diabetes</h3>
+            <p>Endocrinology expert available for appointments.</p>
+        </div>
+        <div class="disease-item">
+            <h3>Heart Problems</h3>
+            <p>Cardiology treatment and scheduled checkups.</p>
+        </div>
+        <div class="disease-item">
+            <h3>Child Care</h3>
+            <p>Pediatrics services for children of all ages.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Doctors Section -->
+<section id="doctors"  class="doctors">
+    <h2>Our Doctors</h2>
+    <div class="doctor-list">
+        <div class="doctor-item">
+            <img src="images/images.jpg" alt="Dr. Sharma" style="width:100%; border-radius:10px;">
+            <h3>Dr. Sharma</h3>
+            <p>Heart Specialist</p>
+            <p>Schedule:Mon-Fri | 10 AM – 4 PM</p>
+        
+        </div>
+        <div class="doctor-item">
+            <img src="images/IMG-20250616-WA0049.jpg"alt="dr. Mehta" style="width:100%; border-radius:10px;">
+            <h3>Dr. Mehta</h3>
+            <p>Child Specialist</p>
+        </div>
+        <div class="doctor-item">
+            <img src="images/1000319147.jpg" alt="Dr. Rao" style="width:100%; border-radius:10px;">
+            <h3>Dr. Rao</h3>
+            
+            <p>General Physician</p>
+            <p>Schedule: Mon–Sat | 11 AM – 5 PM</p>
+        </div>
+    </div>
+</section>
+
+<!-- Online Consultation Form -->
+<section class="consultation">
+    <h2>Quick Online Consultation</h2>
+    <form id="consultForm" action="consultation_process.php" method="post">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="number" name="age" placeholder="Your Age" required>
+        <select name="disease" required>
+            <option value="">Select Your Problem</option>
+            <option value="fever">Fever & Cold</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="heart">Heart Problems</option>
+            <option value="childcare">Child Care</option>
+        </select>
+        <textarea name="description" placeholder="Briefly describe your problem" required></textarea>
+        <button type="submit">Submit Consultation</button>
+    </form>
+</section>
+
+<!-- Appointment Booking Form -->
+<section id="appointment" class="appointment">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm" action="appointment_process.php" method="post">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="number" name="age" placeholder="Your Age" required>
+        <select name="doctor" required>
+            <option value="">Select Doctor</option>
+            <option value="dr-sharma">Dr. Sharma</option>
+            <option value="dr-mehta">Dr. Mehta</option>
+            <option value="dr-rao">Dr. Rao</option>
+        </select>
+        <input type="date" name="date" required>
+        <button type="submit">Book Appointment</button>
+    </form>
+</section>
+<!-- Contact Section -->
+<section id="contact"  class="contact">
+    <h2>Contact Us</h2>
+    <p>Have any questions? Reach us anytime.</p>
+
+    <form id="contactForm" >
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+
+<!-- JS Link -->
+<script src="js/script.js"></script>
+
+
+    <!-- Footer -->
+   <footer style="background:#5f1782; color:white; padding:20px; text-align:center;">
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+    <p>Contact: +91 9699812013 | +91 9373670310</p>
+    <p>&copy; 2026 LifeCare Hospital. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
