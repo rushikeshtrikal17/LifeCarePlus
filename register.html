@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY BACKGROUND */
+body{
+    background:linear-gradient(rgba(95,23,130,0.6), rgba(95,23,130,0.6)),
+               url("images/reg1.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* FORM CONTAINER */
+.container{
+    max-width:450px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* HEADING */
+h2{
+    text-align:center;
+    color:#5f1782;
+    margin-bottom:20px;
+}
+
+/* INPUT FIELDS */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#5f1782;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    background:#5f1782;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#47115f;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:600px){
+    .container{
+        margin:30px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="consultation.html">Consultation</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<div class="container">
+    <h2>Patient Registration</h2>
+
+    <form action="register.php" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <input type="text" name="city" placeholder="City" required>
+    <input type="text" name="mobile" placeholder="Mobile" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="file" name="profile_image">
+    <button type="submit">Register</button>
+</form>
+</div>
+
+</body>
+</html>

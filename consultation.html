@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Consultation | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* Navigation */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* Banner */
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/consultation-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Layout */
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+    padding:0 20px;
+}
+
+/* Consultation Form */
+.consultation{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.consultation h2{
+    color:#5f1782;
+    margin-bottom:15px;
+}
+
+.consultation form input,
+.consultation form select,
+.consultation form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.consultation form textarea{
+    resize:none;
+    height:120px;
+}
+
+.consultation form input:focus,
+.consultation form select:focus,
+.consultation form textarea:focus{
+    outline:none;
+    border-color:#5f1782;
+}
+
+.consultation form button{
+    width:100%;
+    padding:12px;
+    background:#5f1782;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.consultation form button:hover{
+    background:#47115f;
+}
+
+/* Info Section */
+.info{
+    flex:1;
+}
+
+.info-card{
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.info-card h3{
+    color:#5f1782;
+    margin-bottom:5px;
+}
+
+/* Footer */
+footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Mobile Friendly */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="consultation.html">Consultation</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="banner">
+    <h2>Quick Online Consultation</h2>
+    <p>Consult Expert Doctors from Home</p>
+</section>
+
+<div class="container">
+
+    <!-- SAME CONSULTATION FORM -->
+    <section class="consultation">
+        <h2>Consult a Doctor</h2>
+        <form id="consultForm" action="consultation_process.php" method="post">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="number" name="age" placeholder="Your Age" required>
+
+            <select name="disease" required>
+                <option value="">Select Your Problem</option>
+                <option value="fever">Fever & Cold</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="heart">Heart Problems</option>
+                <option value="childcare">Child Care</option>
+            </select>
+
+            <textarea name="description" placeholder="Briefly describe your problem" required></textarea>
+
+            <button type="submit">Submit Consultation</button>
+        </form>
+    </section>
+
+    <!-- IMAGE + INFO -->
+    <div class="info">
+
+        <div class="info-card">
+            <img src="images/consl1.jpg" alt="Online Doctor">
+            <h3>Expert Online Doctors</h3>
+            <p>Consult certified specialists anytime from your mobile.</p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/consl2.jpg" alt="Video Consultation">
+            <h3>Video & Chat Consultation</h3>
+            <p>Safe and secure online consultation platform.</p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/consl3.jpg" alt="Medical Support">
+            <h3>24/7 Medical Support</h3>
+            <p>Instant response for health-related queries.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>

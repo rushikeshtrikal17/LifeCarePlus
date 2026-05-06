@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Life Care Plus | Multi-Speciality Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAVBAR */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    display:inline-block;
+}
+
+nav a:hover,
+nav a.active{
+    background:#5f1782;
+}
+
+/* HERO SECTION */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/hospital-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero h3{
+    margin-top:15px;
+    font-weight:normal;
+}
+
+/* HERO BUTTONS */
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    margin:20px 10px 0;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.book-btn{
+    background:#5f1782;
+}
+
+.book-btn:hover{
+    background:#47115f;
+    transform:scale(1.05);
+}
+
+.emergency-btn{
+    background:#e60000;
+}
+
+.emergency-btn:hover{
+    background:#b30000;
+    transform:scale(1.05);
+}
+
+/* SECTION COMMON */
+section{
+    padding:40px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#5f1782;
+    margin-bottom:20px;
+}
+
+/* INFO BOXES */
+.box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.box img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* OPD NOTICE */
+.notice{
+    background:#fff3cd;
+    border-left:6px solid #ff9800;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+.footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+    margin-top:40px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+
+.social-icons{
+    margin:15px 0;
+}
+
+.social-icons a{
+    color:white;
+    font-size:26px;
+    margin:0 15px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#ffd700;
+    transform:scale(1.2);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .hero h2{
+        font-size:26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="consultation.html">Consultation</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="profile.php">My Profile</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Multi-Speciality Hospital</h2>
+    <p>Trusted Healthcare Services with Modern Facilities</p>
+    <h3>🏥 15+ Years Experience | 👨‍⚕️ 50+ Doctors | 😊 10,000+ Patients</h3>
+
+    <a href="appointment.html" class="btn book-btn">Book Appointment</a>
+    <a href="tel:+919699812013" class="btn emergency-btn">Emergency Call</a>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Life Care Plus</h2>
+    <p style="text-align:center;">
+        Life Care Plus is a multi-speciality hospital established to provide affordable,
+        reliable, and quality healthcare services. With 50+ experienced doctors and
+        advanced medical infrastructure, we serve thousands of patients every year.
+    </p>
+</section>
+
+<!-- DEPARTMENTS -->
+<section>
+    <h2>Our Departments</h2>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/indcard1.jpg">
+            <h3>Cardiology</h3>
+            <p>Heart care with expert cardiologists.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/indcard2.jpg">
+            <h3>Pediatrics</h3>
+            <p>Complete child healthcare services.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/indcard3.png">
+            <h3>General Medicine</h3>
+            <p>Primary healthcare & diagnosis.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/indcard4.jpg">
+            <h3>Emergency & ICU</h3>
+            <p>24×7 emergency and critical care.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OPD RULES -->
+<section>
+    <h2>OPD Timings & Facilities</h2>
+    <div class="notice">
+        <p><strong>OPD Timings:</strong><br>
+        Monday – Saturday: 9:00 AM to 6:00 PM<br>
+        <strong>Sunday: OPD Closed (Emergency Available)</strong></p>
+        <br>
+        <p><strong>Special Benefits:</strong><br>
+        ✔ Free OPD for Senior Citizens (Age 55+)<br>
+        ✔ Free Minor Treatment for Senior Citizens<br>
+        ✔ Priority Consultation for Elderly Patients</p>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+    <h2>Why Choose Life Care Plus?</h2>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/indcard5.webp">
+            <p>20+ Specialist Doctors</p>
+        </div>
+        <div class="box">
+            <img src="images/indcard6.webp">
+            <p>Online Appointment & Consultation</p>
+        </div>
+        <div class="box">
+            <img src="images/indcard7.jpg">
+            <p>Secure Patient Data</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/lifecareplus" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.google.com/maps?q=Life+Care+Hospital" target="_blank">
+            <i class="fas fa-location-dot"></i>
+        </a>
+        <a href="https://twitter.com/lifecareplus" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>

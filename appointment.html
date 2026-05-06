@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Appointment | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* Banner */
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/appointment-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+/* Layout */
+.container{
+    display:flex;
+    max-width:1200px;
+    margin:40px auto;
+    gap:30px;
+    padding:0 20px;
+}
+
+/* Appointment Form */
+.appointment{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.appointment h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#5f1782;
+}
+
+.appointment form input,
+.appointment form select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.appointment form button{
+    width:100%;
+    padding:12px;
+    background:#5f1782;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.appointment form button:hover{
+    background:#47115f;
+}
+
+/* Image Section */
+.side-images{
+    flex:1;
+}
+
+.side-images h3{
+    color:#5f1782;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.image-box{
+    background:white;
+    padding:10px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Info Section */
+.info{
+    max-width:1000px;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.info h3{
+    color:#5f1782;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="banner">
+    <h2>Book Your Appointment</h2>
+    <p>Easy, Fast & Secure Appointment Booking</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- SAME FORM -->
+    <section id="appointment" class="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm" action="appointment_process.php" method="post">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="number" name="age" placeholder="Your Age" required>
+
+            <select name="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="dr-sharma">Dr. Sharma – Cardiologist</option>
+                <option value="dr-mehta">Dr. Mehta – Pediatrician</option>
+                <option value="dr-rao">Dr. Rao – General Physician</option>
+            </select>
+
+            <input type="date" name="date" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- IMAGES SECTION -->
+    <div class="side-images">
+        <h3>Our Hospital Facilities</h3>
+
+        <div class="image-box">
+            <img src="images/apoint1.jpg" alt="Doctor Consultation">
+        </div>
+
+        <div class="image-box">
+            <img src="images/apoint2.avif" alt="Hospital Reception">
+        </div>
+
+        <div class="image-box">
+            <img src="images/apoint3.jpg" alt="Medical Team">
+        </div>
+    </div>
+
+</div>
+
+<section class="info">
+    <h3>Why Choose Life Care Plus?</h3>
+    <p>
+        ✔ 50+ Specialist Doctors <br>
+        ✔ Multi-Specialty Hospital <br>
+        ✔ Online Appointment System <br>
+        ✔ Trusted Healthcare Services
+    </p>
+</section>
+
+<footer>
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>

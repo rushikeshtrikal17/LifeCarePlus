@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#5f1782;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* NAVBAR */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    padding:14px 20px;
+    display:inline-block;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/hospital.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* ABOUT */
+.about{
+    padding:40px;
+    text-align:center;
+    background:white;
+}
+
+/* FACILITIES */
+.facilities{
+    background:#f4f4f4;
+    padding:40px;
+    text-align:center;
+}
+
+.facility-box{
+    width:280px;
+    display:inline-block;
+    background:white;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+    vertical-align:top;
+}
+
+.facility-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* MISSION */
+.mission{
+    padding:40px;
+    text-align:center;
+    background:white;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    color:#5f1782;
+    margin:40px 0 20px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.service-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.12);
+}
+
+.service-box img{
+    width:170px;
+    margin-bottom:10px;
+}
+
+.service-box h3{
+    color:#5f1782;;
+    margin-bottom:8px;
+}
+
+/* REVIEWS */
+.reviews{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:20px;
+}
+
+.review-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.12);
+}
+
+.review-header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.review-header img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.review-header h4{
+    margin:0;
+    color:#333;
+}
+
+.stars{
+    color:gold;
+    margin:5px 0;
+}
+
+/* FOOTER */
+footer{
+    background:#5f1782;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .facility-box{
+        width:90%;
+    }
+}
+
+@media(max-width:600px){
+    .services,.reviews{
+        padding:10px;
+    }
+}
+
+.review-form{
+    max-width:500px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.review-form button{
+    width:100%;
+    padding:10px;
+    background:#5f1782;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.review-form button:hover{
+    background:#47115f;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>About Life Care Plus Hospital</h2>
+    <p>Trusted healthcare services with modern facilities</p>
+</section>
+
+<section class="about">
+    <h2>Who We Are</h2>
+    <p>
+        Life Care Plus is a multi-specialty hospital established to provide affordable,
+        high-quality healthcare services with experienced doctors.
+    </p>
+    <img src="images/about1.avif" style="width:100%;border-radius:10px;margin-top:15px;">
+</section>
+
+<section class="facilities">
+    <h2>Our Facilities</h2>
+
+    <div class="facility-box">
+        <img src="images/about2.jpg">
+        <h3>ICU & Emergency</h3>
+        <p>24x7 advanced emergency care.</p>
+    </div>
+
+    <div class="facility-box">
+        <img src="images/about3.webp">
+        <h3>OPD Services</h3>
+        <p>Experienced doctors available daily.</p>
+    </div>
+
+    <div class="facility-box">
+        <img src="images/lab.jpg">
+        <h3>Laboratory</h3>
+        <p>Fast & accurate diagnostic services.</p>
+    </div>
+</section>
+
+<section class="mission">
+    <h2>Mission & Vision</h2>
+    <p><strong>Mission:</strong> Affordable & reliable healthcare.</p>
+    <p><strong>Vision:</strong> Technology-driven patient care.</p>
+</section>
+
+<h2 class="section-title">Our Hospital Services</h2>
+
+<section class="services">
+    <div class="service-box">
+        <img src="images/indcard5.webp">
+        <h3>50+ Doctors</h3>
+        <p>Multi-specialty hospital.</p>
+    </div>
+    <div class="service-box">
+        <img src="images/serv2.jpg">
+        <h3>Free OPD</h3>
+        <p>For age 55+ | Sunday Closed</p>
+    </div>
+    <div class="service-box">
+        <img src="images/serv3.png">
+        <h3>Online Payment</h3>
+        <p>Secure & fast payments.</p>
+    </div>
+</section>
+
+<h2 class="section-title">Patient Reviews</h2>
+<h2 align="center" style="color:#5f1782;">Write Your Review Here</h2>
+
+<section class="review-form">
+    <input type="text" id="userName" placeholder="Your Name" required>
+
+    <select id="userRating">
+        <option value="5">★★★★★ (5)</option>
+        <option value="4">★★★★☆ (4)</option>
+        <option value="3">★★★☆☆ (3)</option>
+        <option value="2">★★☆☆☆ (2)</option>
+        <option value="1">★☆☆☆☆ (1)</option>
+    </select>
+
+    <textarea id="userReview" placeholder="Write your experience..." required></textarea>
+
+    <button onclick="addReview()">Submit Review</button>
+</section>
+<section class="reviews">
+    <div class="review-card">
+        <div class="review-header">
+            <img src="images/serv4.jpg">
+            <h4>Rushi Patil</h4>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>Excellent hospital experience.</p>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <img src="images/serv4.jpg">
+            <h4>Prajwal Mahurkar</h4>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p>Clean hospital & friendly staff.</p>
+    </div>
+</section>
+
+<footer> <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p> <p>&copy; 2026 Life Care Plus Hospital</p> </footer>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* Banner */
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/contact-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+/* Main Layout */
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+    padding:0 20px;
+}
+
+/* Contact Form */
+.contact{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.contact h2{
+    color:#5f1782;
+    margin-bottom:10px;
+}
+
+.contact p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.contact form input,
+.contact form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.contact form textarea{
+    resize:none;
+    height:120px;
+}
+
+.contact form button{
+    width:100%;
+    padding:12px;
+    background:#5f1782;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.contact form button:hover{
+    background:#47115f;
+}
+
+/* Info Section */
+.info-box{
+    flex:1;
+}
+
+.info-card{
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.info-card h3{
+    color:#5f1782;
+    margin-bottom:5px;
+}
+
+/* Footer */
+footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+/*footer whatsapp*/
+.footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+
+.social-icons{
+    margin:15px 0;
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    margin:0 15px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    transform:scale(1.2);
+}
+
+/* WhatsApp green hover */
+.social-icons a .fa-whatsapp:hover{
+    color:#25D366;
+}
+
+/* Instagram hover */
+.social-icons a .fa-instagram:hover{
+    color:#E1306C;
+}
+
+/* Map hover */
+.social-icons a .fa-location-dot:hover{
+    color:#FFD700;
+}
+
+/* Twitter hover */
+.social-icons a .fa-twitter:hover{
+    color:#1DA1F2;
+}
+
+
+/* Heading text */
+.wa-text{
+    text-align:center;
+    color:green;
+    margin-top:40px;
+}
+
+/* WhatsApp icon container */
+.wa-container{
+    text-align:center;
+    margin-top:100px;   /* approx 10 cm gap */
+}
+
+/* WhatsApp icon */
+.wa-container i{
+    font-size:70px;
+    color:#25D366;      /* WhatsApp green */
+    transition:0.3s;
+}
+
+.wa-container i:hover{
+    transform:scale(1.2);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="banner">
+    <h2>Contact Life Care Plus</h2>
+    <p>We are here to help you 24/7</p>
+</section>
+
+<div class="container">
+
+    <!-- SAME FORM LOGIC -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Reach us anytime.</p>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+
+        <h1 class="wa-text">Contact Us on WhatsApp</h1>
+
+<div class="wa-container">
+    <a href="https://wa.me/919699812013?text=Hello%20Life%20Care%20Plus,%20I%20need%20information" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+    </section>
+    
+
+    <!-- IMAGE + INFO -->
+    <div class="info-box">
+
+        <div class="info-card">
+            <img src="images/contact3.jpg" alt="Reception">
+            <h3>Hospital Reception</h3>
+            <p>Friendly staff available to assist patients and visitors.</p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/contact1.webp" alt="Support">
+            <h3>24/7 Support</h3>
+            <p>Our support team is available round-the-clock for emergencies.</p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/contact2.jpg" alt="Location">
+            <h3>Easy Location Access</h3>
+            <p>Located in the heart of the city with easy transportation.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+
+    <div class="social-icons">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919699812013?text=Hello%20Life%20Care%20Plus,%20I%20need%20information" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/lifecareplus" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Google Map -->
+        <a href="https://www.google.com/maps?q=Life+Care+Hospital" target="_blank">
+            <i class="fas fa-location-dot"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/lifecareplus" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>

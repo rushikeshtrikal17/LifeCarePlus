@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Profile | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#f4f6f9;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+/* HEADER */
+.header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+}
+
+.header h1{
+    margin-bottom:5px;
+}
+
+/* PROFILE CONTAINER */
+.profile-container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+/* PROFILE TOP */
+.profile-top{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #5f1782;
+    object-fit:cover;
+}
+
+/* PROFILE INFO */
+.profile-info h2{
+    color:#5f1782;
+    margin-bottom:10px;
+}
+
+.profile-info p{
+    margin:5px 0;
+    color:#333;
+}
+
+/* SECTION TITLE */
+.section-title{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#5f1782;
+    border-bottom:2px solid #eee;
+    padding-bottom:5px;
+}
+
+/* DETAILS GRID */
+.details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+}
+
+.details div{
+    background:#f9f9f9;
+    padding:12px;
+    border-radius:8px;
+}
+
+/* ACTION BUTTONS */
+.actions{
+    margin-top:30px;
+    text-align:center;
+}
+
+.actions a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 22px;
+    background:#5f1782;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.actions a:hover{
+    background:#47115f;
+}
+
+/* FOOTER */
+footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .profile-top{
+        justify-content:center;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="consultation.html">Consultation</a>
+    <a href="profile.html">My Profile</a>
+    <a href="logout.php">Logout</a>
+</nav>
+
+<div class="header">
+    <h1>Patient Profile</h1>
+    <p>Life Care Plus Hospital</p>
+</div>
+
+<div class="profile-container">
+
+    <!-- TOP PROFILE -->
+    <div class="profile-top">
+        <img src="images/patient.jpg" alt="Patient Image" class="profile-img">
+
+        <div class="profile-info">
+            <h2>Rushikesh Trikal</h2>
+            <p><strong>Patient ID:</strong> LCP1023</p>
+            <p><strong>Status:</strong> Active</p>
+        </div>
+    </div>
+
+    <!-- PERSONAL DETAILS -->
+    <h3 class="section-title">Personal Information</h3>
+    <div class="details">
+        <div><strong>Age:</strong> 22 Years</div>
+        <div><strong>Gender:</strong> Male</div>
+        <div><strong>City:</strong> Latur</div>
+        <div><strong>Mobile:</strong> 9XXXXXXXXX</div>
+        <div><strong>Email:</strong> rushi@email.com</div>
+        <div><strong>Blood Group:</strong> O+</div>
+    </div>
+
+    <!-- MEDICAL INFO -->
+    <h3 class="section-title">Medical Information</h3>
+    <div class="details">
+        <div><strong>Last Appointment:</strong> 12-Mar-2026</div>
+        <div><strong>Doctor:</strong> Dr. Sharma</div>
+        <div><strong>Department:</strong> General Medicine</div>
+        <div><strong>OPD Status:</strong> Free (Above 55 policy not applied)</div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+        <a href="appointment.html">Book Appointment</a>
+        <a href="consultation.html">Online Consultation</a>
+        <a href="#">Edit Profile</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>

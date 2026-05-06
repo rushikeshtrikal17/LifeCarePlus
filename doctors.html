@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Doctors | Life Care Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#333;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#5f1782;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url('images/doctors-banner.jpg');
+    background-size:cover;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.doctors-section{
+    padding:40px;
+    text-align:center;
+}
+
+.doctor-card{
+    width:260px;
+    background:white;
+    display:inline-block;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 12px rgba(0,0,0,0.15);
+    overflow:hidden;
+    vertical-align:top;
+}
+
+.doctor-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.doctor-card h3{
+    color:#5f1782;
+    margin:10px 0 5px;
+}
+
+.doctor-card p{
+    font-size:14px;
+    padding:3px 10px;
+}
+
+.speciality{
+    font-weight:bold;
+}
+
+footer{
+    background:#5f1782;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    .doctor-card{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Life Care Plus</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Our Medical Experts</h2>
+    <p>50+ Experienced Doctors Across Multiple Specialties</p>
+</section>
+
+<section class="doctors-section">
+    <h2>Meet Our Doctors</h2>
+    <p>Highly qualified specialists dedicated to your care</p>
+
+    <!-- Doctor 1 -->
+    <div class="doctor-card">
+        <img src="images/dr1.jpg" alt="Dr. Sharma">
+        <h3>Dr. Sharma</h3>
+        <p class="speciality">Cardiologist</p>
+        <p>Experience: 15+ Years</p>
+        <p>Available: Mon–Fri</p>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-card">
+        <img src="images/dr2.jpg" alt="Dr. Mehta">
+        <h3>Dr. Mehta</h3>
+        <p class="speciality">Pediatrician</p>
+        <p>Experience: 12+ Years</p>
+        <p>Available: Mon–Sat</p>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="doctor-card">
+        <img src="images/dr3.jpg" alt="Dr. Rao">
+        <h3>Dr. Rao</h3>
+        <p class="speciality">General Physician</p>
+        <p>Experience: 10+ Years</p>
+        <p>Available: Daily</p>
+    </div>
+
+    <!-- Doctor 4 -->
+    <div class="doctor-card">
+        <img src="images/dr4.jpg" alt="Dr. Patil">
+        <h3>Dr. Patil</h3>
+        <p class="speciality">Orthopedic Surgeon</p>
+        <p>Experience: 14+ Years</p>
+        <p>Available: Mon–Fri</p>
+    </div>
+
+    <!-- Doctor 5 -->
+    <div class="doctor-card">
+        <img src="images/dr5.jpg">
+        <h3>Dr. Kulkarni</h3>
+        <p class="speciality">Neurologist</p>
+        <p>Experience: 16+ Years</p>
+        <p>Available: Tue–Sat</p>
+    </div>
+
+    <!-- Doctor 6 -->
+    <div class="doctor-card">
+        <img src="images/dr6.jpg">
+        <h3>Dr. Deshmukh</h3>
+        <p class="speciality">Gynecologist</p>
+        <p>Experience: 11+ Years</p>
+        <p>Available: Mon–Sat</p>
+    </div>
+
+    <p style="margin-top:30px; font-weight:bold;">
+        And 40+ more expert doctors from different specialties…
+    </p>
+
+</section>
+
+<footer>
+    <p>Designed by Rushikesh Trikal & Prajwal Mahurkar</p>
+    <p>&copy; 2026 Life Care Plus Hospital</p>
+</footer>
+
+</body>
+</html>
